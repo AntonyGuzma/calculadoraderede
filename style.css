@@ -1,8 +1,35 @@
 @charset "utf-8";
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Yellowtail&display=swap');
+
+*,body{
     padding: 0;
     margin: 0;
+}
+
+img{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+header{
+    background-color: #00aaff;
+    text-align: center;
+    width: 100vw;
+    height: 70px;
+    box-shadow: 1px 1px 35px #00aaff;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+
+    width: auto;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    margin-top: 5rem;
+    font-family: 'Permanent Marker', cursive;
 }
 
 main{
@@ -12,28 +39,64 @@ main{
 }
 
 table{
+    display: block;
+    background-color: white;
     border-collapse: collapse;
-    width: 800px
+    width: auto;
 }
 
 input {
     padding: 10px;
     margin-top: 20px;
     border-radius: 5px;
+    background-color: white;
+    border: solid 1px rgba(0, 0, 0, 0.389);
 }
 
 input#bntcalcular{
     width: 200px;
     padding: 3px;
+    font-weight: bolder;
+    color: #00aaff;
+    background-color: white;
+}
+
+
+
+input#bntcalcular:hover{
+  background-color: #00aaff;
+  color: white;
+  opacity: 0.5;
 }
 
 
 td, th{
     border: 1px solid black;
-    margin: 0%;
     padding: 5px;
 }
 
 th{
-    background-color:#00dffcb4;
+    background-color:#00aaff7e;
 }
+
+
+
+/*Animação de rotação*/
+#loading{
+    margin-top: 10px;
+    animation: is-rotating 1s infinite linear;
+    width: 30px;
+    height: 30px;
+    display: none;
+    border: 6px solid rgb(255, 255, 255);
+    border-top-color: #00aaff;
+    border-bottom-color: #00aaff;
+    border-radius: 30px;
+}
+
+@keyframes is-rotating{
+    to{
+        transform: rotate(1turn);
+    }
+}
+/*Animação de rotação*/

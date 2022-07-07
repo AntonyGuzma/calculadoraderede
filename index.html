@@ -8,10 +8,15 @@
 
     <title>Calculadora</title>
 </head>
-<body>
+<body>   
     <main>
-        <h2>Digite um IP: </h2>
-        <div>
+        <header>
+            <h1>Calculadora de IP</h1>
+        </header>
+    
+        <h2>Informe um IP:</h2>
+
+        <div id="form">
             <input type="text" name="oct1" maxlength="3" minlength="1" placeholder="1º Octeto">
 
             <input type="text" name="oct2" maxlength="3" minlength="1" placeholder="2º Octeto">
@@ -20,12 +25,13 @@
     
             <input type="text" name="oct4" maxlength="3" minlength="1" placeholder="4º Octeto">
             
-            
         </div>
 
         <div>
-            <input id="bntcalcular" type="button" value="Calcular">
+            <input id="bntcalcular" type="button" value="Calcular" onclick="convert()">
         </div>
+
+        <div id="loading"></div>
 
         <br><br>
             <table>
@@ -38,7 +44,7 @@
                     <th scope="col">Ultimo Endereço</th>
                 </tr>
                 <tr>
-                    <td>A</td>
+                    <td id="nomeclasse" >A</td>
                     <td>10.0.0.0</td>
                     <td>255.0.0.0</td>
                     <td>10.255.255.255</td>
@@ -62,6 +68,6 @@
 
     </main>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
