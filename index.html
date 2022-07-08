@@ -34,36 +34,40 @@
         <div id="loading"></div>
 
         <br><br>
-            <table>
+        <div>
+            <table id="container">
                 <tr>
-                    <th scope="col">Classe</th>
-                    <th scope="col">Endereço da Rede</th>
-                    <th scope="col">Mascára</th>
-                    <th scope="col">Broadcast</th>
-                    <th scope="col">1º Endereço</th>
-                    <th scope="col">Ultimo Endereço</th>
-                </tr>
-                <tr>
-                    <td id="nomeclasse"></td>
-                    <td id="endereco"></td>
-                    <td id="mascara"></td>
-                    <td id="broadcast"></td>
-                    <td id="pendereco"></td>
-                    <td id="uendereco"></td>
-                </tr>
-                <tr>
-                    <th colspan="6" id="media" scope="row">Convertido em Binário</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td id="binendereco"></td>
-                    <td id="binmascara"></td>
-                    <td id="binbroadcast"></td>
-                    <td id="binpendereco"></td>
-                    <td id="binuendereco"></td>
-                </tr>
+                    <th >Classe</th>
+                     <td colspan="3" id="nomeclasse">A</td>
+                  </tr>
+                  <tr>
+                    <th>Endereço</th>
+                    <td id="endereco">12.2.20.1</td>
+                    <th rowspan="5">Binario</th>
+                    <td id="binendereco">0000.0000.0000.0000</td>
+                  </tr>
+                  <tr>
+                    <th>Mascára</th>
+                    <td id="mascara">255.0.0.0</td>
+                    <td id="binmascara">0000.0000.0000.0000</td>
+                  </tr>
+                  <tr>
+                    <th>Broadcast</th>
+                    <td id="broadcast">12.255.255.255</td>
+                    <td id="binbroadcast">0000.0000.0000.0000</td>
+                  </tr>
+                   <tr>
+                    <th>Primeiro Endereço</th>
+                    <td id="pendereco">12.255.255.1</td>
+                    <td id="binpendereco">0000.0000.0000.0101</td>
+                  </tr>
+                   <tr>
+                    <th>Ultimo Endereço</th>
+                    <td id="uendereco">12.255.255.255</td>
+                    <td id="binuendereco">0000.0000.0000.254</td>
+                  </tr>
             </table>
-
+        </div>
             <br>
 
     </main>

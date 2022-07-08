@@ -1,4 +1,6 @@
 function convert(){ 
+    var tbl = document.querySelector("table")
+
     var tblclasse = document.getElementById("nomeclasse") //Nome da Classe na tabela
     var tblendereco = document.getElementById("endereco") //Nome do ENdereço na tabela
     var tblmascara = document.getElementById("mascara") //Nome da Mascara na tabela
@@ -163,6 +165,7 @@ function convert(){
         /* Identifar a classe, endereço de rede, máscara, brodcast, primeiro endereço, ultimo endereço,
         e os valores binários correspondentes de cada um */
         if(num1>=1 && num1<=127){ //Se for da classe A
+            tbl.style.display="block"
             classe="A"
             end_rede = num1+".0.0.0"   
             mascara = "255.0.0.0"
@@ -176,6 +179,7 @@ function convert(){
             binario_ult_end = bin1+".11111111.11111111.11111110"
         }
         else if(num1>=128 && num1<=191){ //Se for da classe B
+            tbl.style.display="block"
             classe="B"
             end_rede = num1+"."+num2+".0.0"
             mascara = "255.255.0.0"
@@ -189,6 +193,7 @@ function convert(){
             binario_ult_end = bin1+"."+bin2+".11111111.11111110"   
         }
         else if(num1>=192 && num1<=223){ //Se for da classe C
+            tbl.style.display="block"
             classe="C"
             end_rede = num1+"."+num2+"."+num3+".0"
             mascara = "255.255.255.0"

@@ -15,7 +15,7 @@ img{
 header{
     background-color: #00aaff;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     height: 70px;
     box-shadow: 1px 1px 35px #00aaff;
 }
@@ -39,10 +39,14 @@ main{
 }
 
 table{
-    display: block;
+    display: none;
+    max-width: 100%;
     background-color: white;
-    border-collapse: collapse;
-    width: auto;
+    
+}
+
+#container{
+    overflow-x: scroll;
 }
 
 input {
@@ -71,8 +75,13 @@ input#bntcalcular:hover{
 
 
 td, th{
-    border: 1px solid black;
-    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.744);
+    padding: 8px;
+}
+
+input:hover{
+    background-color: #00aaff;
+    opacity: 0.5;
 }
 
 td:hover{
