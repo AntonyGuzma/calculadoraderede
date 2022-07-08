@@ -15,20 +15,20 @@
         </header>
     
         <h2>Informe um IP:</h2>
-
+        
         <div id="form">
-            <input type="text" id="oct1" name="oct1" maxlength="3" minlength="1" placeholder="1º Octeto">
+            <input type="text" id="oct1" name="oct1" maxlength="3" minlength="1" placeholder="1º Octeto" required>
 
-            <input type="text" id="oct2" name="oct2" maxlength="3" minlength="1" placeholder="2º Octeto">
+            <input type="text" id="oct2" name="oct2" maxlength="3" minlength="1" placeholder="2º Octeto" required>
     
-            <input type="text" id="oct3" name="oct3" maxlength="3" minlength="1" placeholder="3º Octeto">
+            <input type="text" id="oct3" name="oct3" maxlength="3" minlength="1" placeholder="3º Octeto" required>
     
-            <input type="text" id="oct4" name="oct4" maxlength="3" minlength="1" placeholder="4º Octeto">
+            <input type="text" id="oct4" name="oct4" maxlength="3" minlength="1" placeholder="4º Octeto" required>
             
         </div>
 
         <div>
-            <input id="bntcalcular" type="button" value="Calcular" onclick="convert()">
+            <input id="bntcalcular" type="submit" value="Calcular" onclick="convert()">
         </div>
 
         <div id="loading"></div>
@@ -44,23 +44,23 @@
                     <th scope="col">Ultimo Endereço</th>
                 </tr>
                 <tr>
-                    <td id="nomeclasse" >A</td>
-                    <td id="endereco">10.0.0.0</td>
-                    <td id="mascara">255.0.0.0</td>
-                    <td id="broadcast">10.255.255.255</td>
-                    <td id="pendereco">10.0.0.1</td>
-                    <td id="uendereco">10.255.255.254</td>
+                    <td id="nomeclasse"></td>
+                    <td id="endereco"></td>
+                    <td id="mascara"></td>
+                    <td id="broadcast"></td>
+                    <td id="pendereco"></td>
+                    <td id="uendereco"></td>
                 </tr>
                 <tr>
                     <th colspan="6" id="media" scope="row">Convertido em Binário</th>
                 </tr>
                 <tr>
-                    <td>A</td>
-                    <td id="binendereco" >1111.1111.1111.1111</td>
-                    <td id="binmascara">1111.1111.1111.1111</td>
-                    <td id="binbroadcast">1111.1111.1111.1111</td>
-                    <td id="binpendereco">1111.1111.1111.1111</td>
-                    <td id="binuendereco">1111.1111.1111.1111</td>
+                    <td></td>
+                    <td id="binendereco"></td>
+                    <td id="binmascara"></td>
+                    <td id="binbroadcast"></td>
+                    <td id="binpendereco"></td>
+                    <td id="binuendereco"></td>
                 </tr>
             </table>
 
