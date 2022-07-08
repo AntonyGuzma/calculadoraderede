@@ -155,11 +155,8 @@ function convert(){
     var binario_mascara
     var binario_brodcast
 
-    if(num1>=1 && num1<=127){
-        function classe(){
-            classe="A"
-            return classe
-        }
+    if(num1>=1 && num1<=127){      
+        classe="A"
         mascara = "255.0.0.0"
         brodcast = num1+".255.255.255"
         prim_end = num1+".0.0.1"
