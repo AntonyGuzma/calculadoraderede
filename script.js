@@ -154,8 +154,10 @@ function convert(){
     var brodcast
     var binario_mascara
     var binario_brodcast
+    var binario_prim_end
+    var binario_ult_end
 
-    if(num1>=1 && num1<=127){      
+    if(num1>=1 && num1<=127){
         classe="A"
         mascara = "255.0.0.0"
         brodcast = num1+".255.255.255"
@@ -163,8 +165,8 @@ function convert(){
         ult_end = num1+".255.255.254"
         binario_mascara="11111111.00000000.00000000.00000000"
         binario_brodcast = bin1+".11111111.11111111.11111111"
-        binario_prim_end = bin1+"00000000.00000000.00000001"
-        binario_ult_end = bin1+"11111111.11111111.11111110"
+        binario_prim_end = bin1+".00000000.00000000.00000001"
+        binario_ult_end = bin1+".11111111.11111111.11111110"
     }
     else if(num1>=128 && num1<=191){
         classe="B"
@@ -186,10 +188,9 @@ function convert(){
         binario_mascara="11111111.11111111.11111111.00000000"  
         binario_brodcast = bin1+"."+bin2+"."+bin3+".11111111"
         binario_prim_end = bin1+"."+bin2+"."+bin3+".00000001"
-        binario_ult_end = bin1+"."+bin2+"."+bin3+".11111110"     
+        binario_ult_end = bin1+"."+bin2+"."+bin3+".11111110"    
     }
 
-    //Valores que tem que aparecer na tabela
     document.write("<br>Classe: "+classe)
     document.write("<br>End Rede: "+end_rede)
     document.write("<br>Mascara: "+mascara)
@@ -199,5 +200,7 @@ function convert(){
     document.write("<br>IP em binário: "+bin1+"."+bin2+"."+bin3+"."+bin4)
     document.write("<br>Mascara em Binario: "+binario_mascara)
     document.write("<br>Brodcast em Binario: "+binario_brodcast)
+    document.write("<br>1° endereço em Binario: "+binario_prim_end)
+    document.write("<br>Ultimo endereço em Binario: "+binario_ult_end)
 }
 }
