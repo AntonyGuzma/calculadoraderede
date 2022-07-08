@@ -1,5 +1,10 @@
 function convert(){ 
-    var tbl = document.querySelector("table")
+
+    //animação do loading
+    var load = document.getElementById("loading")
+    load.style.display="block"
+
+    setTimeout(() => loadin(), 2000);
 
     var tblclasse = document.getElementById("nomeclasse") //Nome da Classe na tabela
     var tblendereco = document.getElementById("endereco") //Nome do ENdereço na tabela
@@ -12,6 +17,7 @@ function convert(){
     var tblbinbroadcast = document.getElementById("binbroadcast") //Nome do Broadcast na tabela em Binario
     var tblbinpendereco = document.getElementById("binpendereco") //Nome do 1º endereço na tabela em Binario
     var tblbinuendereco = document.getElementById("binuendereco") //Nome ultimo endereço na tabela em Binario
+
 
     //Valores recebidos do formulário;
     var num1 = document.querySelector("#oct1").value 
@@ -165,7 +171,7 @@ function convert(){
         /* Identifar a classe, endereço de rede, máscara, brodcast, primeiro endereço, ultimo endereço,
         e os valores binários correspondentes de cada um */
         if(num1>=1 && num1<=127){ //Se for da classe A
-            tbl.style.display="block"
+            //tbl.style.display="block"
             classe="A"
             end_rede = num1+".0.0.0"   
             mascara = "255.0.0.0"
@@ -179,7 +185,7 @@ function convert(){
             binario_ult_end = bin1+".11111111.11111111.11111110"
         }
         else if(num1>=128 && num1<=191){ //Se for da classe B
-            tbl.style.display="block"
+            //tbl.style.display="block"
             classe="B"
             end_rede = num1+"."+num2+".0.0"
             mascara = "255.255.0.0"
@@ -193,7 +199,7 @@ function convert(){
             binario_ult_end = bin1+"."+bin2+".11111111.11111110"   
         }
         else if(num1>=192 && num1<=223){ //Se for da classe C
-            tbl.style.display="block"
+           // tbl.style.display="block"
             classe="C"
             end_rede = num1+"."+num2+"."+num3+".0"
             mascara = "255.255.255.0"
@@ -220,4 +226,11 @@ function convert(){
         tblbinpendereco.innerText = binario_prim_end
         tblbinuendereco.innerText = binario_ult_end
     }
+}
+
+function loadin(){
+    var tbl = document.querySelector("table") //mostrar a tabela se o ip dor valido
+    var lad = document.getElementById("loading")
+    lad.style.display="none"
+    tbl.style.display="block"
 }
