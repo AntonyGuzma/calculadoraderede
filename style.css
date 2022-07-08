@@ -75,6 +75,12 @@ td, th{
     padding: 5px;
 }
 
+td:hover{
+    background-color: rgba(0, 0, 0, 0.164);
+    opacity: 0.5;
+    color: black;
+}
+
 th{
     background-color:#00aaff7e;
 }
