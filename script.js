@@ -33,7 +33,7 @@ function convert(){
      || (num1==255  && num2==0  && num3==0 && num4==0)){ //Verifica se é uma máscara
         alert("O valor é uma mascara ou inválido!")
     }
-    else if(num2==0 && num3==0){ //Verifica se é loopBack
+    else if(num1==127 && num2==0 && num3==0 && num4==1){ //Verifica se é loopBack
         alert("O valor é um loopback ou inválido!")
     }
     else{
