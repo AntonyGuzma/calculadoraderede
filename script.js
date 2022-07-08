@@ -163,6 +163,8 @@ function convert(){
         ult_end = num1+".255.255.254"
         binario_mascara="11111111.00000000.00000000.00000000"
         binario_brodcast = bin1+".11111111.11111111.11111111"
+        binario_prim_end = bin1+"00000000.00000000.00000001"
+        binario_ult_end = bin1+"11111111.11111111.11111110"
     }
     else if(num1>=128 && num1<=191){
         classe="B"
@@ -171,7 +173,9 @@ function convert(){
         prim_end = num1+"."+num2+".0.1"
         ult_end = num1+"."+num2+".255.254"
         binario_mascara="11111111.11111111.00000000.00000000" 
-        binario_brodcast = bin1+"."+bin2+".11111111.11111111"   
+        binario_brodcast = bin1+"."+bin2+".11111111.11111111"
+        binario_prim_end = bin1+"."+bin2+".00000000.00000001"
+        binario_ult_end = bin1+"."+bin2+".11111111.11111110"   
     }
     else if(num1>=192 && num1<=223){
         classe="C"
@@ -180,10 +184,12 @@ function convert(){
         prim_end = num1+"."+num2+"."+num3+".1"
         ult_end = num1+"."+num2+"."+num3+".254"
         binario_mascara="11111111.11111111.11111111.00000000"  
-        binario_brodcast = bin1+"."+bin2+"."+bin3+".11111111"    
+        binario_brodcast = bin1+"."+bin2+"."+bin3+".11111111"
+        binario_prim_end = bin1+"."+bin2+"."+bin3+".00000001"
+        binario_ult_end = bin1+"."+bin2+"."+bin3+".11111110"     
     }
 
-    //Valore que tem que aparecer na tabela
+    //Valores que tem que aparecer na tabela
     document.write("<br>Classe: "+classe)
     document.write("<br>End Rede: "+end_rede)
     document.write("<br>Mascara: "+mascara)
