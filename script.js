@@ -26,7 +26,7 @@ function convert(){
     else if((num2==255 && num3==255 && num4==255) || (num3==255 && num4==255) || (num4==255)){ //Verifica se é endereço de brodcast
         alert("Valor de brodcast ou inválido!")
     }
-    else if((num2==0 && num3==0 && num4==0) || (num3==0 && num4==0) || (num4==0)  ){ //Verifica se é endereço de rede
+    else if((num1!=255 && num2==0 && num3==0 && num4==0) || (num1!=255 && num3==0 && num4==0) || (num1!=255 && num4==0)  ){ //Verifica se é endereço de rede
         alert("O valor é um endereço de rede ou inválido!")
     }
     else if((num1==255 && num2==255 && num3==255 && num4==0) || (num1==255 && num2==255 && num3==0 && num4==0)
