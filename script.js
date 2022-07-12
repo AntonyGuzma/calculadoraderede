@@ -40,7 +40,7 @@ function convert(){
         alert("O valor é uma mascara ou inválido!")
     }
     else if(num1==127 && num2==0 && num3==0 && num4==1){ //Verifica se é loopBack
-        alert("O valor é um loopback ou inválido!")
+        alert("O valor é um loopback ou inválido!")  
     }
     else{
         //Converter para binario   
