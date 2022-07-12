@@ -28,19 +28,24 @@ function convert(){
     if(num1>255 || num2>255 || num3>255 || num4>255) //Verifica se os octetos são maiores que 255
     {
         alert("Valor invalido!")
+        setTimeout(() => loadin(), 2000);
     }
     else if((num2==255 && num3==255 && num4==255) || (num3==255 && num4==255) || (num4==255)){ //Verifica se é endereço de brodcast
         alert("Valor de brodcast ou inválido!")
+        setTimeout(() => loadin(), 2000);
     }
     else if((num1!=255 && num2==0 && num3==0 && num4==0) || (num1!=255 && num3==0 && num4==0) || (num1!=255 && num4==0)  ){ //Verifica se é endereço de rede
         alert("O valor é um endereço de rede ou inválido!")
+        setTimeout(() => loadin(), 2000);
     }
     else if((num1==255 && num2==255 && num3==255 && num4==0) || (num1==255 && num2==255 && num3==0 && num4==0)
      || (num1==255  && num2==0  && num3==0 && num4==0)){ //Verifica se é uma máscara
         alert("O valor é uma mascara ou inválido!")
+        setTimeout(() => loadin(), 2000);
     }
     else if(num1==127 && num2==0 && num3==0 && num4==1){ //Verifica se é loopBack
         alert("O valor é um loopback ou inválido!")  
+        setTimeout(() => loadin(), 2000);
     }
     else{
         //Converter para binario   
