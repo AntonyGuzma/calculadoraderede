@@ -50,29 +50,9 @@ function convert(){
         count=8-count //Calcula quantos bits faltam para inteirar 8 bits
 
         //Em seguida estamos acrescentando os zeros a esquerda, para manter os 8 bits na saída
-        if(count==1){
-            bin1 = "0"+bin1;
-        }
-        else if(count==2){
-            bin1 = "00"+bin1;
-        }
-        else if(count==3){
-            bin1 = "000"+bin1;
-        }
-        else if(count==4){
-            bin1 = "0000"+bin1;
-        }
-        else if(count==5){
-            bin1 = "00000"+bin1;
-        }
-        else if(count==6){
-            bin1 = "000000"+bin1;
-        }
-        else if(count==7){
-            bin1 = "0000000"+bin1;
-        }
-        else if(count==8){
-            bin1 = "00000000"+bin1;
+        for(var i = Object.keys(bin1).length; i<8; i++)
+        {
+            bin1 = "0"+bin1
         }
 
         var dec2 = parseInt(num2)
@@ -81,29 +61,9 @@ function convert(){
         count=8-count //Calcula quantos bits faltam para inteirar 8 bits
 
         //Em seguida estamos acrescentando os zeros a esquerda, para manter os 8 bits na saída
-        if(count==1){
-            bin2 = "0"+bin2;
-        }
-        else if(count==2){
-            bin2 = "00"+bin2;
-        }
-        else if(count==3){
-            bin2 = "000"+bin2;
-        }
-        else if(count==4){
-            bin2 = "0000"+bin2;
-        }
-        else if(count==5){
-            bin2 = "00000"+bin2;
-        }
-        else if(count==6){
-            bin2 = "000000"+bin2;
-        }
-        else if(count==7){
-            bin2 = "0000000"+bin2;
-        }
-        else if(count==8){
-            bin2 = "00000000"+bin2;
+        for(var i = Object.keys(bin2).length; i<8; i++)
+        {
+            bin2 = "0"+bin2
         }
        
         var dec3 = parseInt(num3)
@@ -112,29 +72,9 @@ function convert(){
         count=8-count //Calcula quantos bits faltam para inteirar 8 bits
 
         //Em seguida estamos acrescentando os zeros a esquerda, para manter os 8 bits na saída
-        if(count==1){
-            bin3 = "0"+bin3;
-        }
-        else if(count==2){
-            bin3 = "00"+bin3;
-        }
-        else if(count==3){
-            bin3 = "000"+bin3;
-        }
-        else if(count==4){
-            bin3 = "0000"+bin3;
-        }
-        else if(count==5){
-            bin3 = "00000"+bin3;
-        }
-        else if(count==6){
-            bin3 = "000000"+bin3;
-        }
-        else if(count==7){
-            bin3 = "0000000"+bin3;
-        }
-        else if(count==8){
-            bin3 = "00000000"+bin3;
+        for(var i = Object.keys(bin3).length; i<8; i++)
+        {
+            bin3 = "0"+bin3
         }
         
         var dec4 = parseInt(num4)
@@ -143,29 +83,9 @@ function convert(){
         count=8-count //Calcula quantos bits faltam para inteirar 8 bits
 
         //Em seguida estamos acrescentando os zeros a esquerda, para manter os 8 bits na saída
-        if(count==1){
-            bin4 = "0"+bin4;
-        }
-        else if(count==2){
-            bin4 = "00"+bin4;
-        }
-        else if(count==3){
-            bin4 = "000"+bin4;
-        }
-        else if(count==4){
-            bin4 = "0000"+bin4;
-        }
-        else if(count==5){
-            bin4 = "00000"+bin4;
-        }
-        else if(count==6){
-            bin4 = "000000"+bin4;
-        }
-        else if(count==7){
-            bin4 = "0000000"+bin4;
-        }
-        else if(count==8){
-            bin4 = "00000000"+bin4;
+        for(var i = Object.keys(bin4).length; i<8; i++)
+        {
+            bin4 = "0"+bin4
         }
         
         /* Identifar a classe, endereço de rede, máscara, brodcast, primeiro endereço, ultimo endereço,
