@@ -46,8 +46,6 @@ function convert(){
         //Converter para binario   
         var dec1 = parseInt(num1)
         var bin1 = dec1.toString(2)          
-        var count = Object.keys(bin1).length; //Conta a quantidade de bits
-        count=8-count //Calcula quantos bits faltam para inteirar 8 bits
 
         //Em seguida estamos acrescentando os zeros a esquerda, para manter os 8 bits na saída
         for(var i = Object.keys(bin1).length; i<8; i++)
@@ -57,8 +55,6 @@ function convert(){
 
         var dec2 = parseInt(num2)
         var bin2 = dec2.toString(2)
-        var count = Object.keys(bin2).length; //Conta a quantidade de bits
-        count=8-count //Calcula quantos bits faltam para inteirar 8 bits
 
         //Em seguida estamos acrescentando os zeros a esquerda, para manter os 8 bits na saída
         for(var i = Object.keys(bin2).length; i<8; i++)
@@ -68,8 +64,6 @@ function convert(){
        
         var dec3 = parseInt(num3)
         var bin3 = dec3.toString(2)
-        var count = Object.keys(bin3).length; //Conta a quantidade de bits
-        count=8-count //Calcula quantos bits faltam para inteirar 8 bits
 
         //Em seguida estamos acrescentando os zeros a esquerda, para manter os 8 bits na saída
         for(var i = Object.keys(bin3).length; i<8; i++)
@@ -79,8 +73,6 @@ function convert(){
         
         var dec4 = parseInt(num4)
         var bin4 = dec4.toString(2)
-        var count = Object.keys(bin4).length; //Conta a quantidade de bits
-        count=8-count //Calcula quantos bits faltam para inteirar 8 bits
 
         //Em seguida estamos acrescentando os zeros a esquerda, para manter os 8 bits na saída
         for(var i = Object.keys(bin4).length; i<8; i++)
